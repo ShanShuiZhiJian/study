@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>大家来学习/新闻详细页</title>
-	<link rel="stylesheet" href="css/css1.css" />
+	<link rel="stylesheet" href="css/article.css" />
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,6 +11,49 @@
 	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 	<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+
+            var flag=new Array(0,0,0)
+
+            window.onscroll = function()
+            {
+
+                var t = document.documentElement.scrollTop || document.body.scrollTop;
+
+
+                if(flag[0]==0)
+                {
+
+                    if( t==500)
+                    {
+                        alert("第一题：");
+                        flag[0]=1;
+
+                    }
+                }
+                if(flag[1]==0)
+                {
+                    if(t==1000&&flag[0]==1)
+                    {
+                        alert("第二题：");
+                        flag[1]=1;
+                    }
+                }
+                if(flag[2]==0)
+                {
+
+                    if(t==1400&&flag[1]==1)
+                    {
+                        alert("第三题：");
+                        flag[2]=1;
+                    }
+                }
+
+            }
+
+        /*}*/
+        /*setTimeout(tishi,15000)*/
+	</script>
 </head>
 <body>
 <!上面封面图片-->
@@ -56,13 +99,15 @@
 <div id="outbox">
 	<div id="outbox1">
 		<div id="left-box">
+			<!--标题及关键字等-->
 			<div id="left-box-top">
 				<h3><span>习主席在人民大会堂发表十九大报告</span></h3>
-				<h5><span>2017年11月10日</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>转自新华网</span></h5>
+				<h6><span>2017年11月10日</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>十九大</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>转自新华网</span></h6>
 			</div>
 			<div id="left-box-img">
 				<img src="img/习主席2.jpg">
 			</div>
+			<!--文章内容-->
 			<div id="word">
 				我们党是高举马克思主义伟大旗帜、理论上十分成熟并且不断发展的伟大政党。党的全国代表大会作为党的最高领导机关，在推动党的事业发展和党的理论建设中具有极为重要的作用。改革开放以来，党的历次全国代表大会都在理论建设上作出重要贡献。党的十九大最重大的理论成就，就是把习近平新时代中国特色社会主义思想写在党的旗帜上，确立为党必须长期坚持的指导思想，实现了党的指导思想又一次与时俱进。
 				把习近平新时代中国特色社会主义思想确立为党必须长期坚持的指导思想，实现了党的指导思想又一次与时俱进
@@ -70,18 +115,20 @@
 				党的十八大是习近平新时代中国特色社会主义思想形成的历史起点。党的十八大以来的5年，以习近平同志为核心的党中央不忘初心、砥砺奋进，有效应对国际国内诸多风险和挑战，解决了许多长期想解决而没有解决的难题，办成了许多过去想办而没有办成的大事，取得全方位、开创性的历史性成就，党和国家事业发生深层次、根本性的历史性变革，中国特色社会主义进入新时代。在这个过程中，习近平同志从理论和实践的结合上，以巨大政治勇气和强烈历史担当，围绕回答新时代坚持和发展什么样的中国特色社会主义、怎样坚持和发展中国特色社会主义这个重大时代课题，进行艰辛理论探索，取得重大理论创新成果，创立了习近平新时代中国特色社会主义思想。党的十八大以来，党和国家事业之所以能攻坚克难，全面开创新局面，从根本上说是因为有以习近平同志为核心的党中央的坚强领导，是因为有习近平同志作为党中央核心、全党核心的坚强领导，是因为有习近平新时代中国特色社会主义思想的科学指引。
 				全面建设社会主义现代化强国，这是党和国家面向未来最重要的任务，也是习近平新时代中国特色社会主义思想形成的时代条件。一部十九大报告，就是习近平新时代中国特色社会主义思想的科学诠释和充分体现，是我们党在新时代极富原创性、经典性、源泉性的强国论、战略论、人民论，具有承前启后、继往开来的划时代的里程碑意义。这部报告进一步指明了党和国家事业的前进方向，是我们党团结带领全国各族人民坚持和发展中国特色社会主义的政治宣言和行动纲领，也是习近平新时代中国特色社会主义思想的集中体现。党的十九大把习近平新时代中国特色社会主义思想写在党的旗帜上，确立为党必须长期坚持的指导思想，实现了党的指导思想又一次与时俱进，为夺取新时代中国特色社会主义伟大胜利、实现“两个一百年”奋斗目标和中华民族伟大复兴的中国梦提供了科学理论指导。
 				习近平新时代中国特色社会主义思想是一个博大精深的科学理论体系。
+				<br>
 			</div>
+			<!--底部-->
 			<div id="bottom">
 				<div id="bottom-left">
 					<img src="img/习主席.jpg">
 				</div>
 				<div id="bottom-right">
 					<p style="line-height: 8px; color:red;">下一个</p>
-					<p id="bottom-right-title" style="line-height:18px;">国家主席习近平会见美国总统特朗普</p>
+					<p id="bottom-right-title" style="line-height:18px;"><a href="#" style="color:black;">国家主席习近平会见美国总统特朗普</a></p>
 					<p style="line-height: 10px;">2017年10月12日</p>
 				</div>
 				<div id="bottom-right-right">
-					<img src="img/下一页图标.png">
+					<a href="#"><img src="img/下一页图标.png"></a>
 				</div>
 			</div>
 			<div id="foot">
@@ -96,7 +143,7 @@
 				<!--<img src="index.jsp">-->
 				<span style="font-size:25px; color:#2f2f31;">精彩推荐</span>
 			</div>
-
+			<!--轮播图部分-->
 			<div id="right-box-mid" style="height: 200px;">
 				<div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -110,13 +157,13 @@
 					<!-- 轮播图片 -->
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="img/习近平会见马尔代夫总统.jpg">
+							<a href="#"><img src="img/习近平会见马尔代夫总统.jpg"></a>
 						</div>
 						<div class="carousel-item">
-							<img src="img/现代化武器.jpg">
+							<a href="#"><img src="img/现代化武器.jpg"></a>
 						</div>
 						<div class="carousel-item">
-							<img src="img/喜迎十九大.jpg">
+							<a href="#"><img src="img/喜迎十九大.jpg"></a>
 						</div>
 					</div>
 
@@ -143,7 +190,7 @@
 				</div>
 				<div id="right-box-mid-right">
 					<p id="right-box-mid-right-top">
-						习近平想世界会联网大会发贺信
+						<a href="#" style="color:black;">习近平想世界会联网大会发贺信</a>
 					</p>
 					<span>2017年10月12日</span>
 				</div>
@@ -154,7 +201,7 @@
 				</div>
 				<div id="right-box-mid-right">
 					<p id="right-box-mid-right-top">
-						李克强欢迎加拿大总理访华
+						<a href="#" style="color:black;">李克强欢迎加拿大总理访华</a>
 					</p>
 					<span>2017年10月12日</span>
 				</div>
@@ -165,7 +212,7 @@
 				</div>
 				<div id="right-box-mid-right">
 					<p id="right-box-mid-right-top">
-						张德江出席第四个国家宪法日座谈会并讲话
+						<a href="#" style="color:black;">张德江出席第四个国家宪法日座谈会并讲话</a>
 					</p>
 					<span>2017年10月12日</span>
 				</div>
@@ -176,7 +223,7 @@
 				</div>
 				<div id="right-box-mid-right">
 					<p id="right-box-mid-right-top">
-						某连组织广大官兵学习十九大精神
+						<a href="#" style="color:black;">某连组织广大官兵学习十九大精神</a>
 					</p>
 					<span>2017年10月12日</span>
 				</div>
@@ -187,12 +234,11 @@
 				</div>
 				<div id="right-box-mid-right">
 					<p id="right-box-mid-right-top">
-						在有困难的时候，军人战士总会出现在抗险一线
+						<a href="#" style="color:black;">在有困难的时候，军人战士总会出现在抗险一线</a>
 					</p>
 					<span>2017年10月12日</span>
 				</div>
 			</div>
-
 
 			</div>
 			<br>
